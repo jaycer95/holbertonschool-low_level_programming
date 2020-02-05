@@ -9,10 +9,6 @@
 */
 int main(void)
 {
-printf("Size of a char: %c byte(s)\n", sizeof(char));
-printf("Size of an int: %i byte(s)\n", sizeof(int));
-printf("Size of a long int: %li byte(s)\n", sizeof(long int));
-printf("Size of a long long int: %lli byte(s)\n", sizeof(long long int));
-printf("Size of a float: %f bytes(s)\n", sizeof(float));
+printf("Size of a char: %c byte(s)\nSize of an int: %i byte(s)\nSize of a long int: %li byte(s)\nSize of a long long int: %lli byte(s)\nSize of a float: %f bytes(s)\n", sizeof(char), sizeof(int), sizeof(long int), sizeof(long long int, sizeof(float));
 return (0);
 }
