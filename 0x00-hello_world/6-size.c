@@ -1,9 +1,9 @@
-#include <stdio.h>
+#include<stdio.h>
 /**
  * main - main function
  * @void: NULL
 (* a blank line
-* Description: Longer description of the function)?
+* Description: the first code executed when a program starts.)?
 (* section header: Section description)*
 * Return: Description of the returned value
 */
