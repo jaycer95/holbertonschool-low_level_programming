@@ -1,7 +1,8 @@
-#include<stdio.h>
+#include <stdio.h>
+/*Print Text*/
 int main(void)
 {
-puts("\"Programming is like building a multilingual puzzle\n");
+puts("\"Programming is like building a multilingual puzzle");
 getchar();
 return (0);
 }
