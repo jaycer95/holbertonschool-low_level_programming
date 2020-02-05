@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * function_name - Short description, single line
- * @parameterx: Description of parameter x
+ * main - main function
+ * @void: null
 (* a blank line
 * Description: Longer description of the function)?
 (* section header: Section description)*
