@@ -22,9 +22,8 @@ putchar(c);
 }
 else
 {
-putchar('$');
-}
-}
 putchar('\n');
+}
+}
 return (0);
 }
