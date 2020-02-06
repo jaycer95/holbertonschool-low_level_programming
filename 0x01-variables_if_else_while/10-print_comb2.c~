@@ -1,0 +1,28 @@
+#include <stdio.h>
+/**
+ * main - prints a couple of lines
+ * @void: Description of parameter x
+(*
+* Description: Longer description of the function)?
+(* section header: Section description)*
+* Return: 0
+*/
+int main(void)
+{
+int i = 48, c;
+while (i <= 56)
+{
+putchar(i);
+putchar(i+1);
+i++;
+for (c = 44 ; c >= 32 ; c -= 12)
+{
+putchar(c);
+if (i == 56)
+{
+putchar('\n');
+}
+}
+}
+return (0);
+}
