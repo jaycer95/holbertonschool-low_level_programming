@@ -9,10 +9,12 @@
 */
 int main(void)
 {
-int i, j = 49, c;
+int i, j, c;
 for (i = 48 ;i <= 56; i++)
 {
-while (j <= 57 || j > i)
+for (j = 49; j <= 57; j++)
+{
+if (j > i)
 {
 putchar(i);
 putchar(j);
@@ -23,12 +25,9 @@ for (c = 44 ; c >= 32 ; c -= 12)
 putchar(c);
 }
 }
-else
-{
-putchar('\n');
-}
-j++;
 }
 }
+}
+ putchar('\n');
 return (0);
 }
