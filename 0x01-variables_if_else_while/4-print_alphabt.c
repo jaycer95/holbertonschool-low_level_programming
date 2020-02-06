@@ -10,9 +10,9 @@
 int main(void)
 {
 char c;
-while (c != e && c != q)
+for (c = 'a'; c <= 'z'; c++)
 {
-for (c = 'a', c <= 'z', c++)
+if (c != 'e' && c != 'q')
 {
 putchar(c);
 }
