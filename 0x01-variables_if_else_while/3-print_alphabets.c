@@ -10,11 +10,14 @@
 int main(void)
 {
 char c, C;
-for (c = 'a', C = 'A'; c <= 'z', C <= 'Z'; c++, C++)
+for (c = 'a'; c <= 'z'; c++)
 {
 putchar(c);
-putchar(C);
-putchar('\n');
 }
+for (C = 'A'; C <= 'Z'; C++)
+{
+putchar(C);
+}
+putchar('\n');
 return (0);
 }
