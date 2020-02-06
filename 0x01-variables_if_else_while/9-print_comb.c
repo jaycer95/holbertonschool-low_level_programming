@@ -1,0 +1,24 @@
+#include <stdio.h>
+/**
+ * main - prints a couple of lines
+ * @void: Description of parameter x
+(*
+* Description: Longer description of the function)?
+(* section header: Section description)*
+* Return: 0
+*/
+int main(void)
+{
+int i;
+for (i = 48 ; i <= 57 ; i++)
+{
+putchar(i);
+if (i == 57)
+{
+putchar(44);
+putchar(' ');
+}
+}
+putchar('$');
+return (0);
+}
