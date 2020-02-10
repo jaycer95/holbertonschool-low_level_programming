@@ -4,10 +4,11 @@
  *
  * Return: Always 0.
  */
-int _isalpha(int c)
+int _abs(int n)
 {
-if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-return (1);
+if (n >= 0)
+return (n);
 else
-return(0);
+return(-n);
 }
+
