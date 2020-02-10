@@ -1,0 +1,74 @@
+#include <unistd.h>
+
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
+{
+  return (write(1, &c, 1));
+}
+/**
+ * print_alphabet - check the code for Holberton School students.
+ *
+ * Return: Always 0.
+ */
+void print_alphabet(void)
+{
+char c;
+for (c = 'a' ;c <= 'z' ; c++)
+{
+_putchar(c);
+}
+_putchar('\n');
+}
+/**
+ * print_alphabet_x10 - check the code for Holberton School students.
+ *
+ * Return: Always 0.
+ */
+void print_alphabet_x10(void)
+{
+int i;
+for (i = 1; i <= 10; i++)
+{
+print_alphabet ();
+}
+}
+/**
+ * islower - check the code for Holberton School students.
+ *
+ * Return: 0.
+ */
+int _islower(int c)
+{
+if (c >= 97 && c <= 122)
+{ 
+_putchar('1');
+}
+else 
+{   
+_putchar('0');
+}
+  return (0);
+}
+/**
+ * islower - check the code for Holberton School students.
+ *
+ * Return: 0.
+ */
+int _isalpha(int c)
+{
+if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+{    
+_putchar('1');
+}
+else 
+{
+_putchar('0');
+}
+return (0) ;
+}

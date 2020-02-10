@@ -1,0 +1,15 @@
+#include "holberton.h"
+/**
+ * main - check the code for Holberton School students.
+ * @void: Description of parameter x
+(*
+* Description: Longer description of the function)?
+(* section header: Section description)*
+* Return: 0
+*/
+int main (void)
+{
+void print_alphabet(void);
+print_alphabet ();
+return (0);
+}
