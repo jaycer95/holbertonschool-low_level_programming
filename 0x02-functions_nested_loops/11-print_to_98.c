@@ -13,19 +13,19 @@ if (n <= 98)
 for (i = n; i <= 98; i++)
 {
 printf("%i", i);
-if (i < 98)
+if (i != 98)
 {
 printf(", ");
 }
 }
 printf("\n");
 }
-if (n >= 98)
+if (n > 98)
 {
 for (i = n; i >= 98; i--)
 {
-  printf("%i", i);
-if (n > 98)
+printf("%i", i);
+if (i != 98)
 {
 printf(", ");
 }
