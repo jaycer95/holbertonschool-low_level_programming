@@ -6,11 +6,11 @@
  */
 void jack_bauer(void)
 {
-int i=0,j,k,l;
- if (i < 2)
-{
+int i,j,k,l;
 for (i = 0; i <= 2; i++)
 {
+  if (i < 2)
+    {
 for (j = 0; j <= 9; j++)
 {
 for (k = 0; k <= 5; k++)
@@ -27,8 +27,8 @@ _putchar('\n');
 }
 }
 }
-}
- else if (i == 2)
+
+else if (i == 2)
    {  
 for (j = 0; j <= 3; j++)
      {
@@ -41,6 +41,7 @@ for (j = 0; j <= 3; j++)
 	       _putchar(k+'0');
 	       _putchar(l+'0');
 	       _putchar('\n');
+	     }
 }
 }
 }
