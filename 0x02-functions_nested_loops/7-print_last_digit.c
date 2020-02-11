@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
+ * print_last_digit - prints the last digit.
  *
- * Return: Always 0.
+ * Return: last digit.
  */
 int print_last_digit(int n)
 {

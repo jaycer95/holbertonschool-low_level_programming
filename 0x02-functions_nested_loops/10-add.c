@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
+ * add - adds two variable.
  *
- * Return: Always 0.
+ * Return: sum.
  */
 int add(int a, int b)
 {

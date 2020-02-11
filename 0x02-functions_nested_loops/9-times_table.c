@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
+ * times_table - calculates times table.
  *
- * Return: Always 0.
+ * Return: void.
  */
 void times_table(void)
 {

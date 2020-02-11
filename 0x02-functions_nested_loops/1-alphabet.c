@@ -1,11 +1,11 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
+ * print_alphabet - prints all the alphabet.
  * @void: Description of parameter x
 (*
 * Description: Longer description of the function)?
 (* section header: Section description)*
-* Return: 0
+* Return: void
 */
 void print_alphabet(void)
 {
