@@ -14,11 +14,11 @@ for (i = n; i <= 98; i++)
 {
 printf("%i, ", i);
 }
- if (n == 98)
-   {
- printf("\n");
+if (n == 98)
+{
+printf("\n");
 }
-}   
+}
 else
 {
 for (i = n; i > 98; i--)
