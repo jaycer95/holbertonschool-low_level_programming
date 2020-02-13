@@ -12,5 +12,6 @@ if (i != 49 && i != 51)
 {
 _putchar(i);
 }
+}
 _putchar('\n');
 }
