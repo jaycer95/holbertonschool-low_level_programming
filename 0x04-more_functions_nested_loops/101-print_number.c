@@ -18,13 +18,13 @@ d = -d;
 e = -e;
 _putchar('-');
 }
-if (b > 0 && c >= 0 && d >= 0)
+if (b > 0)
 {
 _putchar(b + '0');
 _putchar(c + '0');
 _putchar(d + '0');
 }
-else if (b == 0 && c > 0 && d >= 0)
+else if (b == 0 && c > 0)
 {
 _putchar(c + '0');
 _putchar(d + '0');
