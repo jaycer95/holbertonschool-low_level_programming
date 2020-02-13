@@ -1,13 +1,32 @@
 #include "holberton.h"
 /**
- * _islower - check if lower case
- * @c: character.
- * Return: Always 0.
+ * print_triangle - prints triangle
+ * @size: character.
+ * Return: void.
  */
-int _islower(int c)
+void print_triangle(int size)
 {
-  if (c >= 97 && c <= 122)
-    return (1);
-  else
-    return (0);
+int i, j, k;
+if (size <= 0)
+{
+_putchar('\n');
+}
+else
+{
+for (i = 1; i <= size; i++)
+{
+if ((i + 1) <= size)
+{
+for (j = size; j >= (i + 1); j--)
+{
+_putchar(' ');
+}
+}
+for (k = 1; k <= i; k++)
+{
+_putchar('#');
+}
+_putchar('\n');
+}
+}
 }
