@@ -3,7 +3,6 @@
 #include <stdio.h>
 /**
  * main - print numbers and words
- * 
  * Return: Always 0.
  */
 int main(void)
