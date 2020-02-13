@@ -6,7 +6,7 @@
  */
 void print_number(int n)
 {
-int  b = (n / 1000) % 10;
+int  b = n / 1000;
 int  c = (n / 100) % 10;
 int  d = (n % 100) / 10;
 int  e = n % 10;
