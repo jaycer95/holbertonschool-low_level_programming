@@ -9,6 +9,7 @@ int i;
 for (i = 48; i <= 57; i++)
 {
 if (i != 49 && i != 51)
+{
 _putchar(i);
 }
 _putchar('\n');
