@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * _puts - prints to stdout.
- * @*str: pointer.
+ * @str: pointer.
  * Return: void.
  */
 void _puts(char *str)
