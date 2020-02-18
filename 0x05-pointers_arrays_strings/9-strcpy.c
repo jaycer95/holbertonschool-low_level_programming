@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
  * *_strcpy - print half last numbers.
- * @*src: pointer.
- * @*dest: pointer
+ * @src: pointer.
+ * @dest: pointer
  * Return: char.
  */
 char *_strcpy(char *dest, char *src)
@@ -12,7 +12,7 @@ while (src[n] != '\0')
 {
 n++;
 }
-for (i = 0; i <= n+1; i++)
+for (i = 0; i <= n+2; i++)
 {
 dest[i] = src [i];
 }
