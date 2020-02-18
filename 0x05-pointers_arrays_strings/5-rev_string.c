@@ -13,9 +13,9 @@ while (s[n] != '\0')
 x[n] = s[n];
 n++;
 }
- n--;
+n--;
 for (j = n; j >= 0; j--)
 {
-s[n-j]=x[j];
+s[n - j] = x[j];
 }
 }
