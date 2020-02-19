@@ -4,30 +4,36 @@
  * @*s: pointer.
  * Return: int.
  */
+int power(int z)
+{
+  int i, n = 1;
+  for (i = 0 ; i < z; i++)
+    n *= 10;
+  return(n);
+}
 int _atoi(char *s)
 {
-  int i = 0, j, p = 0, k = 0, l = 0, n=0, q, z=0;
-  char m[509];
+int power(int);
+unsigned int sign = 1, i = 0, p = 0, q, n = 0;
+char m[509];
   while ( s[i] != '\0')
     {
-      i++;
-    }
-  for (j = 0; j <= i; j++)
-    {
-      if (s[j] == '-')
-	k++;
-      if (s[j] <= '0' && s[j] >= '9')
+      if ( s[i] == '-')
 	{
-	  m[p]=s[j];
+	  sign *= -1;
+	}
+      if (s[i] >= '0' && s[i] <= '9')
+	{
+	  m[p] = s[i];
 	  p++;
 	}
+       i++;
     }
-      for (q = 0; q <= p; q++)
+      for (q = 0; q < p; q++)
 	{
-z = _putchar(m[q]-'0');	  
-n += z*(10^(p-q));
+	  n += (m[q]-48)*power((p-1)-q);
 	}
        
-   return (n);
+   return (n * sign);
    
 }
