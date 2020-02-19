@@ -18,9 +18,8 @@ j = rand() % 127;
 { 
 s[i] = j ;
  i++;
+ printf("%d\n", s[i]);
 }
-n += s[i];
-}
- printf("%i",n);
+
 return (0);
 }
