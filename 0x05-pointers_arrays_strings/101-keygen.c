@@ -19,7 +19,8 @@ if (j  > 32)
 s[i] = j ;
 i++;
 }
-printf("%s", s[i]);
+printf("%c", s[i]);
+
 n += s[i];
 }
 return (0);
