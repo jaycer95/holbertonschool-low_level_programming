@@ -11,7 +11,7 @@ char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 char m[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 while (s[i] != '\0')
 {
-for (j = 0; j < 50; j++)
+for (j = 0; j <= 52; j++)
 {
 if (s[i] == a[j])
 {
