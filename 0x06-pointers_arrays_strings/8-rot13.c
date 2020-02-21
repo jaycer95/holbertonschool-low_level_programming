@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * *rot13 - convert string to integer.
- * @*s: pointer.
+ * @s: pointer.
  * Return: int.
  */
 char *rot13(char *s)
