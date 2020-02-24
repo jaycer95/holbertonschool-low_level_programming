@@ -11,8 +11,8 @@ while (*s++)
 {
 if (*s == c)
 {
-return (char *)s;
+return (s);
 }
 }
-return(0);
+return (0);
 }

@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * *_strcat - concats two string.
+ * *_memcpy - copies two string.
  * @dest: destination.
  * @src: source
  * @n: unsigned integer.
