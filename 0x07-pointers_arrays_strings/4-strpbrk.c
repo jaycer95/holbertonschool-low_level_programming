@@ -12,6 +12,7 @@ while (*s++)
 if (*s == *accept)
 {
 return (s);
+break;
 }
 }
 return (0);
