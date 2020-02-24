@@ -11,7 +11,7 @@ while (*s++)
 {
 if (*s == *accept)
 {
-return (s);
+return (&s);
 }
 break;
 }
