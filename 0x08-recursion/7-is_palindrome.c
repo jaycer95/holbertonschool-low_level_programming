@@ -1,23 +1,41 @@
 #include "holberton.h"
 /**
- * _print_rev_recursion - print string in reverse mode
- * @s: string to print
+ * strlength - calculates the length of a string
+ * @s: string
+ *
+ * Return: length
  */
-char printrevrecursion(char *s)
+int strlength(char *s)
 {
 if (*s != '\0')
-printrevrecursion(s + 1);
-return(*s);
+{
+return (1 + strlength(s + 1));
+}
+return (0);
 }
 /**
- * is_palindrome - check string if palindrome
+ * palindrome - checks if its a palindrome
  * @s: string
- * Return: 1 if palindrome, 0 if not
+ * @l: integer
+ *
+ * Return: integer
+ */
+int palindrome(char *s, int l)
+{
+if (l <= 1)
+return (1);
+if (*s != *(s + (l - 1)))
+return (0);
+return (palindrome(s + 1, l - 2));
+}
+
+/**
+ * is_palindrome - checks if palindrome
+ * @s: string
+ *
+ * Return: 1 if palindrome, 0 otherwise
  */
 int is_palindrome(char *s)
 {
-if (*s == printrevrecursion(s))
-return (1);
-else 
-return (0);
+  return (palindrome(s, strlength(s)));
 }
