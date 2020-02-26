@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- *_print_rev_recursion - prints a string in rev
+ *_strlen_recursion - returns length of a string
  *@s: pointer type char
- *Return: Void
+ *Return: int.
  */
 int _strlen_recursion(char *s)
 {
