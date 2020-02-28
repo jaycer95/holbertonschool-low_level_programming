@@ -11,16 +11,15 @@ int main(void)
 int i = 0, n = 0, j = 0;
 char s[509];
 srand(time(0));
-while (n <= 2645)
+while (n <= 2772)
 {
 j = rand() % 127;
-if (j  > 32)     
+if (j  >= 33)     
 { 
 s[i] = j ;
 i++;
 }
 printf("%c", s[i]);
-
 n += s[i];
 }
 return (0);
