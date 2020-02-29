@@ -44,8 +44,8 @@ return (0);
 }
 /**
  * main - prints the name of the program
- * @argc - number of arguments
- * @argv - string
+ * @argc: number of arguments
+ * @argv: string
  * Return: 0
  **/
 int main(int argc, char *argv[])
@@ -55,14 +55,14 @@ int i, j;
 if (argv[1] != '\0' && argv[2] != '\0')
 {
 i = _atoi(argv[1]);
-j = _atoi(argv[2]); 
-printf("%i\n", i * j);
+j = _atoi(argv[2]);
+printf("%i\n", i *j);
 }
 else
 {
 printf("Error\n");
-return(1);
+return (1);
 }
 (void)argc;
-return(0);
+return (0);
 }
