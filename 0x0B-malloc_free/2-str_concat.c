@@ -27,14 +27,20 @@ int i = _strlen(s1);
 int j = _strlen(s2);
 char *s;
 if (s1 == NULL)
-return( s2);
+{
+s1 = malloc(sizeof(char));
+s1 = "";
+}
 if (s2 == NULL)
-return (s1);
+{
+s2 = malloc(sizeof(char));
+s2 = "";
+}
 if (s1 == NULL && s2 == NULL)
-return ("");
+s1 = "";
 if (s1 != NULL && s2 != NULL)
 {
-s = malloc(sizeof(char) * (i + j));
+s = malloc(sizeof(char) * (i + j + 1));
 for (k = 0; k <= i; k++)
 {
 s[k] = s1[k];
