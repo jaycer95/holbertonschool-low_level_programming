@@ -36,21 +36,14 @@ int _strlen(char *s)
 char *_strdup(char *str)
 {
 char *dup;
-unsigned int i = _strlen(str);
-if (str != NULL)
+unsigned int i = _strlen(str) + 1;
+dup = malloc(sizeof(char) * i);
+if (str == NULL)
+return (NULL);
+else
 {
-dup = malloc(sizeof(char) * (i + 1));
 if (dup == NULL)
-{
 return (NULL);
-}
-else
-{
-return ((char *)_memcpy(dup, str, i + 1));
-}
-}
-else
-{
-return (NULL);
+return ((char *)_memcpy(dup, str, i));
 }
 }
