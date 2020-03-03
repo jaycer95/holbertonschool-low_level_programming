@@ -13,12 +13,17 @@ char *ar;
 if (size > 0)
 {
 ar = malloc(sizeof(char) * size);
+if (ar == NULL)
+return(NULL);
+else
+{
 while (i <= size)
 {
 ar[i] = c;
 i++;
 }
 return (ar);
+}
 }
 else
 {
