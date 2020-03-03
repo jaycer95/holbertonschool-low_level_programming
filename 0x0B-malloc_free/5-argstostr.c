@@ -29,7 +29,7 @@ arg[a] = av[i][j];
 a++;
 }
 arg[a] = '\n';
- a++;
+a++;
 }
 arg[a] = '\0';
 return (arg);
