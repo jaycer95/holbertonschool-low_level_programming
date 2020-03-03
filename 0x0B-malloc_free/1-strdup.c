@@ -15,17 +15,18 @@ dest[i] = src[i];
 return (dest);
 }
 /**
- * _strlen_recursion - calculate string length
+ * _strlen - calculate string length
  * @s: string.
  * Return: integer.
  */
-int _strlen_recursion(char *s)
+int _strlen(char *s)
 {
-if (*s != '\0')
-{
-return (1 + _strlen_recursion(s + 1));
-}
-return (0);
+  int i = 0;
+  while (s[i] != '\0')
+    {
+      i++;
+    }
+  return (i);
 }
 /**
  * *_strdup - duplicate string
@@ -35,17 +36,17 @@ return (0);
 char *_strdup(char *str)
 {
 char *dup;
-unsigned int i = _strlen_recursion(str);
+unsigned int i = _strlen(str);
 if (str != NULL)
-{
 dup = malloc(sizeof(char) * (i + 1));
+{
 if (dup == NULL)
 {
 return (NULL);
 }
 else
 {
-return ((char *)_memcpy(dup, str, i));
+return ((char *)_memcpy(dup, str, i + 1));
 }
 }
 else
