@@ -24,30 +24,31 @@ char *str_concat(char *s1, char *s2)
 {
 int k, l;
 int i;
- int j;
+int j;
 char *s;
 if (s1 == NULL)
 {
 s1 = malloc(sizeof(char));
-s1 = '\0';
+s1 = "";
 }
 if (s2 == NULL)
 {
 s2 = malloc(sizeof(char));
-s2 = '\0';
+s2 = "";
 }
 i = _strlen(s1);
 j = _strlen(s2);
 s = malloc(sizeof(char) * (i + j + 1));
 if (s == NULL)
 return (NULL);
-for (k = 0; k <= i; k++)
+for (k = 0; s1[k] <= '\0'; k++)
 {
 s[k] = s1[k];
 }
-for (l = 0; l <= j; l++)
+for (l = 0; s2[l] <= '\0'; l++)
 {
 s[i + l] = s2[l];
 }
+s[j] = '\0';
 return (s);
 }
