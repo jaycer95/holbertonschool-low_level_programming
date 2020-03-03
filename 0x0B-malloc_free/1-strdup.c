@@ -40,7 +40,7 @@ return (0);
 char *_strdup(char *str)
 {
 char *dup;
-int i = _strlen_recursion(str);
+int i = _strlen_recursion(str) + 1;
 if (str != NULL)
 {
 dup = malloc(sizeof(char) * i);
