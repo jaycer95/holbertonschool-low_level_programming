@@ -41,14 +41,13 @@ j = _strlen(s2);
 s = malloc(sizeof(char) * (i + j + 1));
 if (s == NULL)
 return (NULL);
-for (k = 0; s1[k] <= '\0'; k++)
+for (k = 0; k <= i; k++)
 {
 s[k] = s1[k];
 }
-for (l = 0; s2[l] <= '\0'; l++)
+for (l = 0; l <= j; l++)
 {
 s[i + l] = s2[l];
 }
-s[j] = '\0';
 return (s);
 }
