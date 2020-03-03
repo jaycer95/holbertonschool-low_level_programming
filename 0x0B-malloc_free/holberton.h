@@ -1,6 +1,7 @@
 #ifndef _HOLBERTON_H_
 #define _HOLBERTON_H_
 
+int _putchar(char c);
 char *argstostr(int ac, char **av);
 void free_grid(int **grid, int height);
 int **alloc_grid(int width, int height);
