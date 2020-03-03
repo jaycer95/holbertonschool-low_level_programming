@@ -29,16 +29,16 @@ char *s;
 if (s1 == NULL)
 {
 s1 = malloc(sizeof(char));
-s1 = "";
+s1 = '\0';
 }
 if (s2 == NULL)
 {
 s2 = malloc(sizeof(char));
-s2 = "";
+s2 = '\0';
 }
 s = malloc(sizeof(char) * (i + j + 1));
 if (s == NULL)
-return(NULL);
+return (NULL);
 for (k = 0; k <= i; k++)
 {
 s[k] = s1[k];
@@ -47,5 +47,6 @@ for (l = 0; l <= j; l++)
 {
 s[i + l] = s2[l];
 }
+s[j] = '\0';
 return (s);
 }
