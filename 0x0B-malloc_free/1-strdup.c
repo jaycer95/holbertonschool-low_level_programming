@@ -1,23 +1,18 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
- * *_strcpy - print half last numbers.
- * @src: pointer.
- * @dest: pointer
- * Return: char.
+ * *_memcpy - copies two string.
+ * @dest: destination.
+ * @src: source
+ * @n: unsigned integer.
+ * Return: dest.
  */
-char *_strcpy(char *dest, char *src)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-int n = 0, i;
-while (src[n] != '\0')
-{
-n++;
-}
-for (i = 0; i <= n; i++)
-{
-dest[i] = src[i];
-}
-return (dest);
+  unsigned int i;
+  for (i = 0 ; i < n; i++)
+    dest[i] = src[i];
+  return (dest);
 }
 /**
  * _strlen_recursion - calculate string length
@@ -40,7 +35,7 @@ return (0);
 char *_strdup(char *str)
 {
 char *dup;
-int i = _strlen_recursion(str) + 1;
+unsigned int i = _strlen_recursion(str) + 1;
 if (str != NULL)
 {
 dup = malloc(sizeof(char) * i);
@@ -50,7 +45,7 @@ return (NULL);
 }
 else
 {
-return ((char *)_strcpy(dup, str));
+  return ((char *)_memcpy(dup, str, i));
 }
 }
 else
