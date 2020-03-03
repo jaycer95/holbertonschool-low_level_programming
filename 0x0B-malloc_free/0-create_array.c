@@ -22,6 +22,6 @@ return (ar);
 }
 else
 {
-return (0);
+return (NULL);
 }
 }
