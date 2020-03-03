@@ -36,11 +36,9 @@ if (s2 == NULL)
 s2 = malloc(sizeof(char));
 s2 = "";
 }
-if (s1 == NULL && s2 == NULL)
-s1 = "";
-if (s1 != NULL && s2 != NULL)
-{
 s = malloc(sizeof(char) * (i + j + 1));
+if (s == NULL)
+return(NULL);
 for (k = 0; k <= i; k++)
 {
 s[k] = s1[k];
@@ -50,6 +48,4 @@ for (l = 0; l <= j; l++)
 s[i + l] = s2[l];
 }
 return (s);
-}
-return (NULL);
 }
