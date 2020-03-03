@@ -21,12 +21,12 @@ return (dest);
  */
 int _strlen(char *s)
 {
-  int i = 0;
-  while (s[i] != '\0')
-    {
-      i++;
-    }
-  return (i);
+int i = 0;
+while (s[i] != '\0')
+{
+i++;
+}
+return (i);
 }
 /**
  * *_strdup - duplicate string
@@ -36,12 +36,13 @@ int _strlen(char *s)
 char *_strdup(char *str)
 {
 char *dup;
-unsigned int i = _strlen(str) + 1;
-dup = malloc(sizeof(char) * i);
+unsigned int i;
 if (str == NULL)
 return (NULL);
 else
 {
+i = _strlen(str) + 1;
+dup = malloc(sizeof(char) * i);
 if (dup == NULL)
 return (NULL);
 return ((char *)_memcpy(dup, str, i));
