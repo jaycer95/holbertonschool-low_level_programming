@@ -9,10 +9,10 @@
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-  unsigned int i;
-  for (i = 0 ; i < n; i++)
-    dest[i] = src[i];
-  return (dest);
+unsigned int i;
+for (i = 0 ; i < n; i++)
+dest[i] = src[i];
+return (dest);
 }
 /**
  * _strlen_recursion - calculate string length
@@ -35,17 +35,17 @@ return (0);
 char *_strdup(char *str)
 {
 char *dup;
-unsigned int i = _strlen_recursion(str) + 1;
+unsigned int i = _strlen_recursion(str);
 if (str != NULL)
 {
-dup = malloc(sizeof(char) * i);
+dup = malloc(sizeof(char) * (i + 1));
 if (dup == NULL)
 {
 return (NULL);
 }
 else
 {
-  return ((char *)_memcpy(dup, str, i));
+return ((char *)_memcpy(dup, str, i));
 }
 }
 else
