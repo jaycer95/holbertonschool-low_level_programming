@@ -38,8 +38,8 @@ char *_strdup(char *str)
 char *dup;
 unsigned int i = _strlen(str);
 if (str != NULL)
-dup = malloc(sizeof(char) * (i + 1));
 {
+dup = malloc(sizeof(char) * (i + 1));
 if (dup == NULL)
 {
 return (NULL);
