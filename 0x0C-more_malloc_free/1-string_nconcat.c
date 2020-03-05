@@ -19,11 +19,9 @@ while (s1[i] != '\0')
 {
 i++;
 }
-}
 while (s2[j] != '\0')
 {
 j++;
-}
 }
 s = malloc(sizeof(char) * (i + n + 1));
 if (s == NULL)
