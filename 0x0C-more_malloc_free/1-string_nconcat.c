@@ -11,22 +11,22 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 unsigned  int i = 0, j = 0, k, l;
 char *s;
-if (s1 != NULL)
-{
+if (s1 == NULL)
+s1 = "";
+if (s2 == NULL)
+s2 = "";
 while (s1[i] != '\0')
 {
 i++;
 }
 }
-if (s2 != NULL)
-{
 while (s2[j] != '\0')
 {
 j++;
 }
 }
-s = malloc(sizeof(char) * (i + n) + 1);
-if (s1 == NULL)
+s = malloc(sizeof(char) * (i + n + 1));
+if (s == NULL)
 return (NULL);
 for (l = 0; l < i; l++)
 {
