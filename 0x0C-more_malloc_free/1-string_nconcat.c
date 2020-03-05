@@ -34,8 +34,8 @@ s[l] = s1[l];
 for (k = 0 ; k < n; k++)
 {
 s[k + i] = s2[k];
-if (k == (j - 1))
-break;
+if (s[k + i] != '\0')
+continue;
 }
 s[k + i] = '\0';
 return (s);
