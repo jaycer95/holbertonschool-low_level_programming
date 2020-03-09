@@ -20,7 +20,7 @@ char *owner;
  * @age: float.
  * @owner: char.
  */
-struct dog
+typedef struct dog
 {
   char *name;
   float age;
