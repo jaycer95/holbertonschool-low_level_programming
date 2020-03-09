@@ -50,28 +50,28 @@ return (p);
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *new_dog;
-char *newname;
-char *newowner;
+char *nname;
+char *nowner;
 if (name == NULL || owner == NULL)
 return (NULL);
 new_dog = malloc(sizeof(dog_t));
 if (new_dog == NULL)
 return (NULL);
-newname = _strdup(name);
-if (newname == NULL)
+nname = _strdup(name);
+if (nname == NULL)
 {
 free(new_dog);
 return (NULL);
 }
-newowner = _strdup(owner);
-if (newowner == NULL)
+nowner = _strdup(owner);
+if (nowner == NULL)
 {
-free(newname);
+free(nname);
 free(new_dog);
 return (NULL);
 }
-new_dog->name = newname;
+new_dog->name = nname;
 new_dog->age = age;
-new_dog->owner = newowner;
+new_dog->owner = nowner;
 return (new_dog);
 }
