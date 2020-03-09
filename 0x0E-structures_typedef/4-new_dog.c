@@ -49,19 +49,18 @@ return (p);
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-dog_t *my_dog;
+dog_t *new_dog;
 char *newname;
 char *newowner;
 if (name == NULL || owner == NULL)
 return (NULL);
-my_dog = malloc(sizeof(dog_t));
-if (my_dog == NULL)
+new_dog = malloc(sizeof(dog_t));
+if (new_dog == NULL)
 return (NULL);
 newname = _strdup(name);
 newowner = _strdup(owner);
-my_dog->name = newname;
-my_dog->age = age;
-my_dog->owner = newowner;
-(void)* new_dog;
-return(my_dog);
+new_dog->name = newname;
+new_dog->age = age;
+new_dog->owner = newowner;
+return (my_dog);
 }
