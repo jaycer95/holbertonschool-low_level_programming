@@ -62,5 +62,5 @@ newowner = _strdup(owner);
 new_dog->name = newname;
 new_dog->age = age;
 new_dog->owner = newowner;
-return (my_dog);
+return (new_dog);
 }
