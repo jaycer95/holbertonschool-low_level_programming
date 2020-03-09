@@ -1,7 +1,7 @@
-#ifndef _HOLBERTON_H_
-#define _HOLBERTON_H_
+#ifndef _DOG_H_
+#define _DOG_H_
 
-int _putchar(char c);
+
 /**
  * struct dog - structure.
  * @name: char.
@@ -30,5 +30,9 @@ char *owner;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
+char *_strdup(char *str);
+int _strlen(char *str1);
+dog_t *new_dog(char *name, float age, char *owner);
+int _putchar(char c);
 
 #endif
