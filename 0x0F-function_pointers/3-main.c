@@ -21,15 +21,15 @@ if ((*argv[2] == '/' || *argv[2] == '%' ) && *argv[3] == '0')
 printf("Error\n");
 exit(100);
 }
+num1 = atoi(argv[1]);
+num2 = atoi(argv[3]);
+operator = get_op_func(argv[2]);
 if (operator == NULL)
 {
 printf("Error\n");
 exit(99);
 }
-num1 = atoi(argv[1]);
-num2 = atoi(argv[3]);
-operator = get_op_func(argv[2]);
-calc = operator(a, b);
+calc = operator(num1, num2);
 printf("%i\n", calc);
 return (0);
 }
