@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- *
- *
- *
- *
+ * main - calculates operation.
+ * @argc: integer
+ * @argv: arguments
+ * Return: int.
  */
 int main(int argc, char **argv)
 {
