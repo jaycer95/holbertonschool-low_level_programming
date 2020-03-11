@@ -19,8 +19,8 @@ op_t ops[] = {
 int i = 0;
 while (ops[i].op != NULL)
 {
-if (*s == *ops[i].op)
-return (*ops[i].f);
+if (*s == *ops[i].op && strlen(s) == 1)
+return (ops[i].f);
 i++;
 }
 printf("Error\n");
