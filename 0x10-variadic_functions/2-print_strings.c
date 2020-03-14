@@ -17,7 +17,7 @@ va_start(arg, n);
 while (i < n)
 {
 p = va_arg(arg, char *);
-if ( p == NULL)
+if (p == NULL)
 p = "(nil)";
 printf("%s", p);
 if (separator != NULL && i != n - 1)

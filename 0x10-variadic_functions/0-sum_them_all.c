@@ -13,7 +13,7 @@ va_list arg;
 if (n <= 0)
 return (0);
 va_start(arg, n);
-while (i <= n)
+while (i < n)
 {
 sum += va_arg(arg, int);
 i++;
