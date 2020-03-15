@@ -27,7 +27,7 @@ printf("%i", va_arg(arg, int));
  */
 void print_float(va_list arg)
 {
-  printf("%f", va_arg(arg, double));
+printf("%f", va_arg(arg, double));
 }
 /**
  * print_string - print a string.
@@ -44,7 +44,7 @@ printf("%s", p);
 }
 /**
  * print_all - prints all.
- * @format : list of the format 
+ * @format: list of the format 
  * Return: void
  */
 void print_all(const char * const format, ...)
@@ -70,7 +70,7 @@ if (format[j] == *(type[i].character))
 printf("%s", sep);
 (type[i].print_func)(arg);
 sep = ", ";
- break;
+break;
 }
 i++;
 }
