@@ -1,4 +1,4 @@
-#include "variadic_functions.h"
+B#include "variadic_functions.h"
 #include <stdio.h>
 #include <stdarg.h>
 #include <stdlib.h>
@@ -44,7 +44,7 @@ printf("%s", p);
 }
 /**
  * print_all - prints all.
- * @format: list of the format 
+ * @format: list of the format
  * Return: void
  */
 void print_all(const char * const format, ...)
