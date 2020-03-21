@@ -16,18 +16,18 @@ unsigned int i;
 s = strdup(str);
 if (s == NULL)
 return (NULL);
-while(s)
+while (s)
 {
 i++;
 }
 list = malloc(sizeof(list_t));
 if (list == NULL)
 return (NULL);
-tmp->str = s;
-tmp->len = i;
-tmp->next = NULL;
+list->str = s;
+list->len = i;
+list->next = NULL;
 if (head != NULL)
-tmp->next = *head;
-*head = tmp;
+list->next = *head;
+*head = list;
 return (*head);
 }
