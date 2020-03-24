@@ -1,23 +1,5 @@
 #include "lists.h"
 /**
- *  listint_len - returns the length of the list .
- * @h : list.
- * Return: length.
- */
-
-size_t listint_len(const listint_t *h)
-{
-	const listint_t *list = h;
-	unsigned int i = 0;
-
-	while (list)
-	{
-		list = list->next;
-		i++;
-	}
-	return (i);
-}
-/**
  * insert_nodeint_at_index - inserts a node.
  * @head : list.
  * @idx : index .
@@ -28,24 +10,30 @@ size_t listint_len(const listint_t *h)
 
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *list = *head, *exist;
+	listint_t *list, *exist;
 	unsigned int i = 0;
 
+	list = *head;
 	exist = malloc(sizeof(listint_t));
-	if (!exist)
+	if (exist == NULL)
+		return (NULL);
+	if (head == NULL)
 		return (NULL);
 	exist->n = n;
 	exist->next = NULL;
 	if (idx == 0)
 	{
-		if (list != NULL)
-			exist->next = *head;
+		exist->next = *head;
 		*head = exist;
 		return (exist);
 	}
 	if (list != NULL)
 	{
-		i = listint_len(head);
+		while (list)
+		{
+			list = list->next;
+			i++;
+		}
 		if (idx > i + 1)
 			return (NULL);
 		if (idx == i + 1)
