@@ -6,8 +6,6 @@
  * @n : integer.
  * Return: integer.
  */
-
-
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	listint_t *list, *exist;
@@ -15,12 +13,9 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 
 	list = *head;
 	exist = malloc(sizeof(listint_t));
-	if (exist == NULL)
-		return (NULL);
-	if (head == NULL)
+	if (exist == NULL || head == NULL)
 		return (NULL);
 	exist->n = n;
-	exist->next = NULL;
 	if (idx == 0)
 	{
 		exist->next = *head;
@@ -42,11 +37,8 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		{
 			list = *head;
 			i = 0;
-			while (i < idx - 1)
-			{
-				list = list->next;
-				i++;
-			}
+			for (; i < idx - 1; i++)
+			list = list->next;
 			exist->next = list->next;
 			list->next = exist;
 		}
