@@ -7,7 +7,7 @@
 int sum_listint(listint_t *head)
 {
 	listint_t *list = head;
-	int k;
+	int k = 0;
 
 	if (list == NULL)
 		return (0);
