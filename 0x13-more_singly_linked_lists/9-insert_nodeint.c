@@ -18,11 +18,11 @@ size_t listint_len(const listint_t *h)
 	return (i);
 }
 /**
- * insert_nodeint_at_index - inserts a new node at a given position.
+ * insert_nodeint_at_index - inserts a node.
  * @head : list.
- * @idx : index where to insert the new element.
- * @n : the value of the new element.
- * Return: length of the list.
+ * @idx : index .
+ * @n : integer.
+ * Return: integer.
  */
 
 
@@ -56,7 +56,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 			i = 0;
 			while (i < idx - 1)
 			{
-				l = l->next;
+				list = list->next;
 				i++;
 			}
 			exist->next = list->next;
