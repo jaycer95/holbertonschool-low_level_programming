@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * create - createss a text file and prints it to standard output.
+ * create_file - creates a text file and prints it to standard output.
  * @filename : file name
  * @text_content: content of file
  * Return: integer.
@@ -19,7 +19,7 @@ int create_file(const char *filename, char *text_content)
 	if (text_content == NULL)
 		return (1);
 	while (text_content[size])
-		size ++;
+		size++;
 	rtrn = write(fd, tex_content, size);
 	if (print == -1)
 		return (-1);
