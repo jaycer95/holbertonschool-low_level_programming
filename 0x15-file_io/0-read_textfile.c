@@ -12,7 +12,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	int size;
 	char *copy;
 
-	if (!filename)
+	if (filename == NULL)
 		return (0);
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
@@ -21,7 +21,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	size = read(fd, copy, letters);
 	if (size == -1)
 		return (0);
-	print = write(1,  copy, size);
+	print = write(STDOUT_FILENO, copy, size);
 	if (print == -1)
 		return (0);
 	free(copy);
