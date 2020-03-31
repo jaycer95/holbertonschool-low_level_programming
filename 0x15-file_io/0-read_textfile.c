@@ -8,8 +8,8 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t print;
-	int fd = open(filename, 0_RDONLY);
-	unsigned int size;
+	int fd = open(filename, O_RDONLY);
+	int size;
 	char *copy;
 
 	if (!filename)
