@@ -8,12 +8,13 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t print;
-	int fd = open(filename, O_RDONLY);
+	int fd;
 	int size;
 	char *copy;
 
 	if (!filename)
 		return (0);
+	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 		return (0);
 	copy = malloc(letters);
