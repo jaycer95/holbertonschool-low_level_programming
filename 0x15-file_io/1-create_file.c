@@ -20,8 +20,8 @@ int create_file(const char *filename, char *text_content)
 		return (1);
 	while (text_content[size])
 		size++;
-	rtrn = write(fd, tex_content, size);
-	if (print == -1)
+	rtrn = write(fd, text_content, size);
+	if (rtrn == -1)
 		return (-1);
 	close(fd);
 	return (rtrn);
