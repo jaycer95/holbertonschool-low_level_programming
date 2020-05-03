@@ -1,4 +1,4 @@
-#include "lists.h"
+B#include "lists.h"
 /**
  * insert_dnodeint_at_index - insert node at index
  * @h: head
@@ -17,7 +17,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	if (*h == NULL && idx != 0)
 	{
 		free(add);
-	        return (NULL);
+		return (NULL);
 	}
 	add->n = n;
 	add->next = NULL;
@@ -31,7 +31,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	while (adv)
 	{
 		if (i == idx)
-	        {
+		{
 			add->next = adv;
 			add->prev = adv->prev;
 			adv->prev->next = add;
