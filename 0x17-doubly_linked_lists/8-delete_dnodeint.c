@@ -1,9 +1,9 @@
 #include "lists.h"
 /**
- *
- *
- *
- *
+ * delete_dnodeint_at_index - deletes node at given index
+ * @head: head node
+ * @index: given index
+ * Return: -1 if fails or 1 on success
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
